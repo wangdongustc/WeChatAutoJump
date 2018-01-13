@@ -17,6 +17,14 @@ inline std::string get_time_string() {
   return asctime(timeinfo);
 }
 
+template<class T>
+void swap_if_larger(T* a, T* b) {
+  if (*a <= *b) return;
+  auto t = *a;
+  *a = *b;
+  *b = t;
+}
+
 inline void init_glog(std::string logname) {
   FLAGS_stderrthreshold = google::GLOG_INFO;
   FLAGS_colorlogtostderr = true;

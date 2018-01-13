@@ -7,7 +7,7 @@
 using namespace std;
 using namespace cv;
 
-#define IMAGE_PATH  "/home/wangdong/Projects/WeChatAutoJump/imgs/10.png"
+#define IMAGE_PATH  "/home/wangdong/Projects/WeChatAutoJump/imgs/s222.png"
 
 int h_low = 110;
 int h_high = 135;
